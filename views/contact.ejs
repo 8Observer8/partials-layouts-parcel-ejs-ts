@@ -2,17 +2,17 @@
     <%- title %>
 </h1>
 
-<% if(emailsVisible) {%>
-    <h3>Email adresses</h3>
-    <ul>
-        <% for (let i=0; i < emails.length; i++) {%>
-            <li>
-                <%=emails[i] %>
-            </li>
-            <%} %>
-    </ul>
-    <% } else {%>
-        <h3>No email address</h3>
-        <%} %>
-            <p>Phone: <%=phone %>
-            </p>
+<% if(emailsVisible) { %>
+<h3>Email adresses</h3>
+<ul>
+    <% for (let i=0; i < emails.length; i++) { %>
+    <li>
+        <%=emails[i] %>
+    </li>
+    <% } %>
+</ul>
+<% } else { %>
+<h3>No email address</h3>
+<% } %>
+
+<p>Phone: <%=phone %></p>
